@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -29,6 +30,32 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
+=======
+import React from 'react'
+
+function Button() {
+  return(
+    <button className='px-5 py-5 bg-red-800'>ini adalah button</button>
+  );
+}
+
+function Teks() {
+  return(
+    <h1>hello world</h1>
+  );
+}
+
+function App() {
+  return (
+    <div className='flex justify-center items-center mt-24 mr-10'>
+      <div>
+        <Button></Button>
+        <Teks></Teks>
+        <Teks></Teks>
+        <Teks></Teks>
+      </div>
+    </div>
+>>>>>>> 6082308 (add components)
   )
 }
 

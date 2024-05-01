@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "my-react-app",
+=======
+  "name": "react-learn",
+>>>>>>> 6082308 (add components)
   "private": true,
   "version": "0.0.0",
   "type": "module",
