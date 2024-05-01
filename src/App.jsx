@@ -12,6 +12,7 @@ function Teks() {
   );
 }
 
+
 function App() {
   return (
     <div className='flex justify-center items-center mt-24 mr-10'>

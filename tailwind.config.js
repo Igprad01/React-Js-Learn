@@ -8,9 +8,5 @@ export default {
     extend: {},
   },
   plugins: [],
-<<<<<<< HEAD
-}
-=======
-}
 
->>>>>>> 6082308 (add components)
+}
