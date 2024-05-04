@@ -3,7 +3,7 @@ import Foto from './assets/img/foto1.jpg'
 
 const ButtonA = (props) => {
   return (
-    <button className={`px-10 py-10 ${props.variant}`}>{props.Teks}</button>
+    <button className={`px-10 py-10 ${props.color}`}>{props.Teks}</button>
   )
 }
 
@@ -27,15 +27,15 @@ const Picture = (props) => {
   ;
 }
 
-
+// buat structure folder nanti
 
 
 function App() {
   return (
     <div className='flex justify-center items-center mt-24 mr-10'>
       <div>
-        <ButtonA variant = "bg-red-700" Teks = "ini adalah teks"/>
-        <ButtonA variant = "bg-blue-200" />
+        <ButtonA color = "bg-red-700" Teks = "ini adalah teks"/>
+        <ButtonA color = "bg-blue-200" />
         <Teks />
         <Picture ukuran = "10px"/>
         <Picture ukuran = "50px"/>
