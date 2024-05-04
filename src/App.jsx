@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Foto from './assets/img/foto1.jpg'
 
 const ButtonA = (props) => {
   return (
@@ -20,6 +20,13 @@ const Teks = () => {
   )
 }
 
+const Picture = (props) => {
+  return(
+    <img src={Foto} alt="ini adalah foto" width={props.ukuran}/>
+  )
+  ;
+}
+
 
 
 
@@ -30,6 +37,10 @@ function App() {
         <ButtonA variant = "bg-red-700" Teks = "ini adalah teks"/>
         <ButtonA variant = "bg-blue-200" />
         <Teks />
+        <Picture ukuran = "10px"/>
+        <Picture ukuran = "50px"/>
+        <Picture ukuran = "100px"/>
+        <Picture ukuran = "200px"/>
       </div>
     </div>
   )
