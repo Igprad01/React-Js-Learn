@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './components/button/button'
-import Teks from './components/teks/teks'
-import Picture from './components/Picture/picture'
+import Button from './components/button'
+import Teks from './components/teks'
+import Picture from './components/Picture'
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Button color = "bg-red-200"/>
         <Button color = "bg-white"/>
         <Button color = "bg-red-200"/>
+        <Teks />
         <Teks />
         <Picture ukuran = "500px"/>
       </div>
