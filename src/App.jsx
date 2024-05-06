@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './components/button'
-import Teks from './components/teks'
-import Picture from './components/Picture'
+import Button from './components/ELements/button'
+import Teks from './components/ELements/teks'
+import Picture from './components/ELements/Picture'
 
 function App() {
   return (
