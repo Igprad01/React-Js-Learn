@@ -1,14 +1,11 @@
 import React from 'react'
-import Button from './components/ELements/button'
-import Teks from './components/ELements/teks'
-import Picture from './components/ELements/Picture'
+import Form from './components/ELements/form/form'
+
 
 function App() {
   return (
-    <div className='flex justify-center items-center mt-24 mr-10'>
-      <div>
-        <Button color = "bg-red-200"/>
-      </div>
+    <div> 
+      <Form />
     </div>
   )
 }
