@@ -12,3 +12,5 @@ function App() {
 
 
 export default App
+
+// besok langsung project untuk belajar react js 
