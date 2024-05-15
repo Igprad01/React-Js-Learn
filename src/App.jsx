@@ -1,12 +1,12 @@
 import React from 'react'
-import Form from './components/ELements/form/form'
+import Login from './pages/login'
+
+
 
 
 function App() {
   return (
-    <div> 
-      <Form />
-    </div>
+    <Login />
   )
 }
 
