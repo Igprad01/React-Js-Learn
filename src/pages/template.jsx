@@ -1,9 +1,9 @@
 import FormLogin from "../components/Layouts/FormInput"
 
-const Login = () => {
+const Template = () => {
     return (
         <FormLogin />
     )
 }
 
-export default Login
+export default Template

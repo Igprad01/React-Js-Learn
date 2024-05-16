@@ -1,12 +1,12 @@
 import React from 'react'
-import Login from './pages/login'
+import Template from './pages/template'
 
 
 
 
 function App() {
   return (
-    <Login />
+    <Template />
   )
 }
 
