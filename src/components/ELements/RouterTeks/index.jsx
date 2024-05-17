@@ -1,8 +1,8 @@
 import React from "react";
 
-const TeksRouter = () => {
+const TeksRouter = (props) => {
     return(
-        <p className="text-white font-bold italic"><a href="/output">ini adalah router</a></p>
+        <p className={`${props.teksColor} font-bold italic`}><a href={props.link}>ini adalah router</a></p>
     )
 }
 
