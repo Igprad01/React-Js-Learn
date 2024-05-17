@@ -1,9 +1,14 @@
-import React from "react"
+import React from "react";
 
 const ButtonA = (props) => {
-    return (
-      <button className={`px-8 py-3 rounded-lg ${props.color} ${props.textColor} `}>Submit</button>
-    )
-  }
+  return (
+    <a
+      href= {props.link}
+      className={`px-8 py-3 rounded-lg ${props.color} ${props.textColor}`}
+    >
+      submit
+    </a>
+  );
+};
 
-  export default ButtonA
+export default ButtonA;
