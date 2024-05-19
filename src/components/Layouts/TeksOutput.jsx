@@ -5,7 +5,6 @@ const TeksOutput = () => {
     return (
         <div>
             <TeksRouter teksColor = 'text-red-900' link = '/' />
-            <ButtonA />
         </div>
     )
 }

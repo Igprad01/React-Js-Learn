@@ -9,6 +9,7 @@ import FormLogin from './components/Layouts/FormInput.jsx'
 import FormOutput from './components/Layouts/Output.jsx'
 import TeksOutput from './components/Layouts/TeksOutput.jsx'
 
+// buat SPA untuk template nya menyusul + sekalian belajar react 
 
 const route = createBrowserRouter ([
   {
