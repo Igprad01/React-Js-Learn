@@ -1,4 +1,4 @@
-import FormLogin from "../components/Layouts/FormInput"
+import FormLogin from "../components/Layouts/navbar"
 
 const Template = () => {
     return (

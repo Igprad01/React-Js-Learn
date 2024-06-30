@@ -3,7 +3,7 @@ import React from "react";
 const button = () => {
     return (
         <a href="">
-            ini adalah button
+            ini button
         </a>
     )
 }
