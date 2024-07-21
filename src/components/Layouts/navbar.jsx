@@ -1,9 +1,12 @@
 import React from "react";
 
-const FormLogin = () => {
-  return (
-    <h1>Hello world</h1>
-  );
-};
+const Navbar = (props) => {
+    <nav className="w-auto ">
+        <div> 
 
-export default FormLogin;
+        </div>
+    </nav>
+}
+
+
+export default Navbar
