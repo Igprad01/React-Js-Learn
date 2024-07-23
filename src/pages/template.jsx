@@ -1,8 +1,8 @@
-import FormLogin from "../components/Layouts/navbar"
+import Navbar from "../components/Layouts/navbar"
 
 const Template = () => {
     return (
-         <FormLogin />
+        <Navbar />
     )
 }
 

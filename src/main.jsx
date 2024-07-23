@@ -5,14 +5,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import FormLogin from './components/Layouts/FormInput.jsx'
-
-// buat SPA untuk template nya menyusul + sekalian belajar react 
+import Template from './pages/Template'
 
 const route = createBrowserRouter ([
   {
     path: "/",
-    element : <FormLogin />
+    element : <Template />
   },
 
 
