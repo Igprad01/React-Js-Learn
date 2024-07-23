@@ -1,10 +1,9 @@
 import React from "react";
 
 
-const LogoNav = () => {
-    
+const LogoNav = (props) => {
     return (
-        <a href="#" className="">Indo Movies</a>
+        <a href={props.link} >{props.title}</a>
     )
 }
 

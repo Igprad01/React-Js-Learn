@@ -4,9 +4,9 @@ import ListNav from "../ELements/ListNav/List";
 
 const Navbar = () => {
     return (
-        <nav className="w-full bg-blue-700 p-5">
-            <div className="container mx-auto flex justify-between">
-                <LogoNav />
+        <nav className="w-full bg-blue-700 p-10">
+            <div className="container mx-auto flex justify-between text-2xl capitalize text-white">
+                <LogoNav title = 'Indo Movies'  />
                 <ListNav />
             </div>
         </nav>

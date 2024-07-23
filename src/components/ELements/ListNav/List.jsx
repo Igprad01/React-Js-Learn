@@ -6,7 +6,7 @@ const ListNav = () => {
     return (
         <ul className=" flex justify-end">
             {List.map((item) => (
-                <a href="" className="mr-2">{item}</a>
+                <a href="#" className="mr-10">{item}</a>
             ))}
         </ul>
     )
