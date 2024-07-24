@@ -19,7 +19,7 @@ function Navbar() {
                     <Search />
                     <ListNav />
                 </div>
-                <div className="md:hidden flex items-center">
+                <div className="md:hidden flex items-center ml-14">
                     <button onClick={ToggleMenu} className="focus: outline-none">
                     <svg viewBox="0 0 100 80" width="40" height="40">
                         <rect width="100" height="20"></rect>
@@ -30,9 +30,11 @@ function Navbar() {
                 </div>
             </div>
             {isOpen && (
-                <div className="mt-10">
-                    <Search />
+                <div className="mt-5 mr-3 font-bold text-white text-base capitalize">
+                    <Search padding = 'py-2 pr-10'/>
+                    <div className="mt-2">
                     <ListNav />
+                    </div>
                 </div>
             )}
         </nav>

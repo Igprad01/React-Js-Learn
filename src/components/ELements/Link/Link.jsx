@@ -3,7 +3,7 @@ import React from "react";
 
 const Link = (props) => {
     return (
-        <a href={props.link} >{props.title}</a>
+        <a href={props.link} className={``} >{props.title}</a>
     )
 }
 
