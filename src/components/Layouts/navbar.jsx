@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import LogoNav from "../ELements/Link/Link";
 import ListNav from "../ELements/ListNav/List";
 import Search from "../ELements/Pencarian/Pencarian";
-import Gambar from "../ELements/Image/Image";
+
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ function Navbar() {
         <nav className="w-full bg-blue-700 p-10">
             <div className="container mx-auto flex justify-between text-2xl capitalize text-white">
                 <LogoNav title='Indo Movies' />
-                <div className="hidden md:flex items-center space-x-14">
+                <div className="hidden md:flex items-center space-x-10">
                     <Search />
                     <ListNav />
                 </div>
@@ -30,7 +30,7 @@ function Navbar() {
                 </div>
             </div>
             {isOpen && (
-                <div>
+                <div className="mt-10">
                     <Search />
                     <ListNav />
                 </div>

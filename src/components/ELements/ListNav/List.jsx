@@ -5,8 +5,8 @@ const ListNav = () => {
     const List = ['home','How to Download','other'];
     return (
         <ul className=" flex justify-end ">
-            {List.map((item) => (
-                <a href="#" className="mr-10">{item}</a>
+            {List.map((list) => (
+                <a href="#" className="mr-10">{list}</a>
             ))}
         </ul>
     )
