@@ -5,11 +5,11 @@ import Button from "../ELements/Button/Button";
 
 const HeroSection = () => {
     return (
-        <div className="w-full bg-cyan-700 ">
-            <Heading1 />
-            <Button content = 'ini adalah button' />
+        <div className="w-full bg-cyan-700 px-64 py-64 ">
+           
         </div>
     )
 }
+
 
 export default HeroSection
