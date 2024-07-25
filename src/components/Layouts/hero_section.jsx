@@ -1,12 +1,10 @@
 import React from "react";
+// import heroImage from "../../assets/img/HeroSection.jpg";
 
 const HeroSection = () => {
 
-    const BackgroundImg = ('');
-
     return (
-        <div className="w-full bg-cyan-700 px-64 py-64 ">
-           
+        <div className="w-full bg-hero-section bg-cover bg-center py-96">
         </div>
     )
 }
