@@ -10,14 +10,15 @@ function Navbar() {
     const ToggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
+    
+    
     return (
         <nav className="w-full bg-blue-700 p-10">
             <div className="container mx-auto flex justify-between text-2xl capitalize text-white">
                 <LogoNav title='Indo Movies' />
                 <div className="hidden md:flex items-center space-x-10">
                     <Search />
-                    <ListNav />
+                    <ListNav animation = 'hover:underline'/> 
                 </div>
                 <div className="md:hidden flex items-center ml-14">
                     <button onClick={ToggleMenu} className="focus: outline-none">
