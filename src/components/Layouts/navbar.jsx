@@ -13,7 +13,7 @@ function Navbar() {
     
     
     return (
-        <nav className="w-full bg-blue-700 p-10">
+        <nav className="w-full bg-hero-section p-10">
             <div className="container mx-auto flex justify-between text-2xl capitalize text-white">
                 <LogoNav title='Indo Movies' />
                 <div className="hidden md:flex items-center space-x-10">
