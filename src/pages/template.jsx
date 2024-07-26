@@ -3,7 +3,7 @@ import Navbar from "../components/Layouts/navbar"
 
 const Template = () => {
     return (
-        <body>
+        <body className="bg-hero-section bg-cover">
             <Navbar />
             <HeroSection />
         </body>
