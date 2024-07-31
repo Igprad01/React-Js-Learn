@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-section': "url('/src/assets/img/HeroSection.jpg')",
-      }
     },
   },
   plugins: [],
