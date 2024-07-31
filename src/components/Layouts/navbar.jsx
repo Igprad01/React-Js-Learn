@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LogoNav from "../ELements/Link/Link";
 import ListNav from "../ELements/ListNav/List";
-import Search from "../ELements/Pencarian/Pencarian";
+
 
 
 function Navbar() {
@@ -17,7 +17,6 @@ function Navbar() {
             <div className="container mx-auto flex justify-between text-2xl capitalize text-white">
                 <LogoNav title='Indo Movies' />
                 <div className="hidden md:flex items-center space-x-10">
-                    <Search />
                     <ListNav animation = 'hover:underline'/> 
                 </div>
                 <div className="md:hidden flex items-center ml-14 bg-white">
@@ -32,7 +31,6 @@ function Navbar() {
             </div>
             {isOpen && (
                 <div className="mt-5 mr-3 font-bold text-white text-base capitalize">
-                    <Search padding = 'py-2 pr-10'/>
                     <div className="mt-2">
                     <ListNav />
                     </div>
