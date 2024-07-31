@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import LogoNav from "../ELements/Link/Link";
 import ListNav from "../ELements/ListNav/List";
 
-
-
-function Navbar() {
+const  Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const ToggleMenu = () => {
@@ -13,8 +11,8 @@ function Navbar() {
     
     
     return (
-        <nav className="w-full bg-black p-12">
-            <div className="container mx-auto flex justify-between text-2xl capitalize text-white">
+        <nav className="w-full bg-black p-5">
+            <div className="container mx-auto flex justify-between text-xl capitalize text-white">
                 <LogoNav title='Indo Movies' />
                 <div className="hidden md:flex items-center space-x-10">
                     <ListNav animation = 'hover:underline'/> 
