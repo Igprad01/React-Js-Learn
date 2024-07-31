@@ -1,7 +1,5 @@
-import React from "react";
+import { useState } from "react"
 
-const ToggleButton = () => {
-    return (
-        <button></button>
-    )
+const Toggle = () => {
+    
 }
