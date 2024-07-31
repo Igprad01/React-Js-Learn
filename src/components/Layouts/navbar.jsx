@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import LogoNav from "../ELements/Link/Link";
 import ListNav from "../ELements/ListNav/List";
 
 const  Navbar = () => {
@@ -11,15 +10,14 @@ const  Navbar = () => {
     
     
     return (
-        <nav className="w-full bg-black p-5">
-            <div className="container mx-auto flex justify-between text-xl capitalize text-white">
-                <LogoNav title='Indo Movies' />
+        <nav className="w-full p-5 shadow-lg">
+            <div className="container mx-auto flex justify-between text-xl capitalize text-black">
                 <div className="hidden md:flex items-center space-x-10">
                     <ListNav animation = 'hover:underline'/> 
                 </div>
-                <div className="md:hidden flex items-center ml-14 bg-white">
+                <div className="md:hidden flex items-center bg-white">
                     <button onClick={ToggleMenu} className="focus: outline-none">
-                    <svg viewBox="0 0 100 80" width="40" height="40">
+                    <svg viewBox="0 0 100 80" width="20" height="20">
                         <rect width="100" height="20"></rect>
                         <rect y="30" width="100" height="20"></rect>
                         <rect y="60" width="100" height="20"></rect>
@@ -28,8 +26,8 @@ const  Navbar = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className="mt-5 mr-3 font-bold text-white text-base capitalize">
-                    <div className="mt-2">
+                <div className="mt-5 font-bold text-black text-base capitalize">
+                    <div className="mr-2 ml-1">
                     <ListNav />
                     </div>
                 </div>
