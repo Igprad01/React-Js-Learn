@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ListNav from "../ELements/ListNav/List";
+import Toggle from "../ELements/toggle/Toggle";
 
 const  Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,7 @@ const  Navbar = () => {
             <div className="container mx-auto flex justify-between text-xl capitalize text-black">
                 <div className="hidden md:flex items-center space-x-10">
                     <ListNav animation = 'hover:underline'/> 
+                    <Toggle />
                 </div>
                 <div className="md:hidden flex items-center bg-white">
                     <button onClick={ToggleMenu} className="focus: outline-none">
