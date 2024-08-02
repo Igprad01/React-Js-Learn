@@ -1,15 +1,15 @@
 import { useState } from "react"
 
-const Toggle = () => {
-    const [isToggle, setIstoggle] = useState(false)
+const Toggle = (props) => {
+    const [isOpen, setIsOpen] = useState(false);
 
-    const handlebutton = () => {
-        setIstoggle(!isToggle)
-    }
-
+    const ToggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+    
     return (
-        <button onClick={handlebutton}>
-            {isToggle ? 'ON' : 'OFF'}
+        <button onClick={ToggleMenu} className={props.styling}>
+            {isOpen ? 'ON' : 'OFF'}
         </button>
     )
 }
