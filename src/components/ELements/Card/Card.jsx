@@ -1,6 +1,8 @@
 import React from "react";
 import Heading1 from './../Heading1/H1';
 
+// get api nya nanti disini
+
 
 const Card = (props) => {
     return (
