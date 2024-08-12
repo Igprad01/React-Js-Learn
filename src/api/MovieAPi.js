@@ -1,8 +1,7 @@
 import axios from "axios";
 
-
 const GetMovie = () => {
-    axios.get("")
+    axios.get("https://freetestapi.com/api/v1/movies/1")
     .then((res) => {
         console.log(res);
     })
@@ -12,3 +11,4 @@ const GetMovie = () => {
 };
 
 export default GetMovie
+
