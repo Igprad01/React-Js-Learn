@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const GetMovie = () => {
-    axios.get("https://freetestapi.com/api/v1/movies/1")
+const GetMovie = async () => {
+    axios.get("https://freetestapi.com/api/v1/movies")
     .then((res) => {
         console.log(res);
     })
