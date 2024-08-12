@@ -1,30 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Heading1 from '../ELements/Heading1/H1';
 import Card from "../ELements/Card/Card";
-import { useEffect } from "react";
-import GetMovie  from "../../api/MovieAPi"
+import GetMovie from "../../api/MovieAPi";
 
 const ContentPage = () => {
-    const [moviepage, setmoviepage] = useState(null);
+    const [movies, setmoviepage] = useState([]);
+    const Numbercard = 10; 
 
-    useEffect(()=> {
-        GetMovie()
-        });
+    useEffect(() => {
+        const Moviedata = async () => {
+            const data = await GetMovie();
+            setmoviepage(data);
+        };
 
-    const Numbercard = 10;
-
-    const ArrayCard = Array.from({length : Numbercard});
-
+        Moviedata();
+    },[])
+ 
     return (
-        <div className={`container bg-slate-200  mx-auto p-5 rounded-lg shadow-lg`}>
-            <Heading1 text = 'ini adalah teks' />
+        <div className={`container bg-slate-200 mx-auto p-5 rounded-lg shadow-lg`}>
+            <Heading1 text='ini adalah teks' />
             <div className={`w-full grid grid-cols-5 gap-5 mb-7`}>
-                {ArrayCard.map((_, dat)=>(
-                    <Card key = {dat} />
-                ))};
+                {movies.slice(0, Numbercard).map((movie, index) => (
+                    <Card key={index} movie={movie} />
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
-export default ContentPage
+export default ContentPage;
