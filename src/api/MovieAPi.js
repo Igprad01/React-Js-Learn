@@ -1,13 +1,13 @@
 import axios from "axios";
 
 const GetMovie = async () => {
-    axios.get("https://freetestapi.com/api/v1/movies")
-    .then((res) => {
-        console.log(res);
-    })
-    .catch((err)=>{
-        console.log(err);
-    });
+  try {
+    const response = await axios.get('https://freetestapi.com/api/v1/movies');
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 };
 
 export default GetMovie
