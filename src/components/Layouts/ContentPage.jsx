@@ -17,7 +17,7 @@ const ContentPage = () => {
     },[])
  
     return (
-        <div className={`container bg-slate-200 mx-auto p-5 rounded-lg shadow-lg `}>
+        <div className={`container bg-gray-100 mx-auto p-5 rounded-lg shadow-lg `}>
             <Heading1 text='movies list' styling = 'text-center font-bold text-4xl uppercase' />
             <div className={`w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 mb-7 mt-10`}>
                 {movies.slice(0, Numbercard).map((movie, index) => (
