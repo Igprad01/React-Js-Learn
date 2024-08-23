@@ -1,17 +1,11 @@
-import { useState } from "react"
+import React from "react";
 
-const Toggle = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
+const Toggle = ({ styling, toggleTheme, isDarkMode }) => {
+  return (
+    <button onClick={toggleTheme} className={styling}>
+      {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+    </button>
+  );
+};
 
-    const ToggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-    
-    return (
-        <button onClick={ToggleMenu} className={props.styling}>
-            {isOpen ? 'ON' : 'OFF'}
-        </button>
-    )
-}
-
-export default Toggle
+export default Toggle;
