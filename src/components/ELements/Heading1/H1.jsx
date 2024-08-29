@@ -1,8 +1,8 @@
 import React from "react";
 
-const Heading1 = (props) => {
+const Heading1 = ({styling, text}) => {
     return (
-        <h1 className={props.styling}>{props.text}</h1>
+        <h1 className={styling}>{text}</h1>
     )
 }
 
