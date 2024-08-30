@@ -1,8 +1,8 @@
 import React from "react";
 
-const Gambar = (props) => {
+const Gambar = ({imgLink, titleImg, height, width}) => {
     return (
-        <img src={props.imgLink} alt={props.titleImg} className={``} height={props.height} width={props.width} />
+        <img src={imgLink} alt={titleImg} className={``} height={height} width={width} />
     )
 }
 

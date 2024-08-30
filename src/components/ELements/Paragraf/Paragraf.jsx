@@ -1,8 +1,8 @@
 import React from "react";
 
-const Teks = (props) => {
+const Teks = ({styling, kalimat}) => {
     return (
-        <p className={props.styling}>{props.kalimat}</p>
+        <p className={styling}>{kalimat}</p>
     )
 }
 
