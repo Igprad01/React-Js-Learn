@@ -13,10 +13,12 @@ const Template = () => {
 
     return (
         <body>
-            <Navbar toggleTheme={toggletheme} isDarkMode={isDarkMode} />
+           <div className={`${isDarkMode ? 'bg-slate-800' : 'bg-white'}`}>
+           <Navbar toggleTheme={toggletheme} isDarkMode={isDarkMode} />
             <HeroSection isDarkMode={isDarkMode}  />
             <ContentPage isDarkMode={isDarkMode} />
             <Footer isDarkMode={isDarkMode} />
+           </div>
         </body>
     )
 }
